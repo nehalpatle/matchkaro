@@ -10,6 +10,7 @@
     box-sizing: inherit;
     font-family: "Jost", sans-serif;
     font-family: "Montserrat Alternates", sans-serif;
+    /* cursor: url(../img/cursor.cur),auto; */
 }
 
 body,
@@ -374,21 +375,13 @@ img {
     font-weight: 600;
     line-height: 140%;
     margin: 30px 0;
+    text-transform: none;
 }
 
-.hero-text .download-btn-2 {
-    padding: 20px;
-    text-transform: uppercase;
-    border-radius: 57px;
-    background: #FFF;
-    color: #000;
-    box-shadow: 0px 0px 37px 0px rgba(0, 0, 0, 0.25);
-    width: 30%;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 10px;
-    align-items: center;
-    text-decoration: none;
+.hero-text .download-btn-2 img{
+    box-shadow:  12px 12px 24px #c7c7c7,
+             -12px -12px 24px #ffffff;
+    width: 25%;
 }
 
 
@@ -697,6 +690,7 @@ img {
 #contact-footer{
     display: flex;
     flex-direction: column;
+
 }
 
 #contact-footer .contact{
@@ -724,10 +718,12 @@ img {
 }
 
 #contact-footer .contact .contact-form{
-    background: #FFF;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
     padding: 30px;
     margin-left: 20%;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow:  12px 12px 24px #c7c7c7,
+             -12px -12px 24px #ffffff;
 }
 
 .contact-form input[type=text], .contact-form input[type=email], .contact-form textarea{
@@ -738,10 +734,12 @@ img {
     padding: 5px;
     margin: 5px 0px;
     width: 100%;
+    font-weight: bold;
 
 }
 
 .contact-form input[type=submit]{
+    font-weight: bold;
     border-radius: 7px;
     background: #F6172A;
     color: #FFF;
@@ -789,6 +787,8 @@ img {
     width: 10%;
     height: 10%;
 }
+
+
 
 /* #callback {
     position: absolute;

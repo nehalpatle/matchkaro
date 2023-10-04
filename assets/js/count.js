@@ -1,6 +1,6 @@
 /*------ The End Of Year Date To Countdown To --------*/
 
-let countDownDate = new Date().setDate(new Date().getDate() + 40);
+let countDownDate = new Date().setDate(new Date().getDate() + 30);
 
 let counter = setInterval(() => {
   // Get Date Now

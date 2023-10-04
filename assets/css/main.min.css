@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat+Alternates:wght@200&display=swap");
+
+/* ----- BASE ----- */
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Jost", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* ----- SMOOTH SCROLL ----- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------scroll bar----- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    display: none;
+}
+
+body.no-touch {
+    overflow: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ol li,
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ---------- Navbar ------------ */
+
+.cont {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-left: 2rem;
+    margin-right: 1.3rem;
+}
+
+#navbar {
+    --navbar-height: 80px;
+    position: fixed;
+    height: var(--navbar-height);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+}
+
+.navbar-item {
+    margin: 0.9em;
+}
+
+.home-link,
+.navbar-link {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    font-weight: 600;
+    font-size: 17px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.home-link .logo {
+    width: 150px;
+    height: 60px;
+}
+
+.navbar-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+}
+
+.navbar-link:is(:focus, :hover) {
+    color: #F6172A;
+}
+
+#navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    background-color: #000;
+}
+
+#navbar-toggle:is(:focus, :hover) .icon-bar {
+    background-color: black;
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
+    transform: rotate(45deg);
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
+    transform: rotate(-45deg);
+}
+
+#navbar-menu {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+}
+
+#navbar-toggle[aria-expanded="true"]+#navbar-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-links {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+}
+
+#navbar-toggle[aria-expanded="true"]+#navbar-menu .navbar-links {
+    padding: 1em;
+}
+
+@media screen and (min-width: 700px) {
+
+    #navbar-toggle,
+    #navbar-toggle[aria-expanded="true"] {
+        display: none;
+    }
+
+    #navbar-menu,
+    #navbar-toggle[aria-expanded="true"] #navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    .navbar-links,
+    #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* ------ Navbar Download button ------ */
+
+.download-btn {
+    font-weight: 600;
+    color: white;
+    padding: 12px 20px;
+    background: #F6172A;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.download-btn:hover {
+    background: white;
+    border: 2px solid #F6172A;
+    color: #000;
+}
+
+/* ----------- Safety Centre Page--------- */
+
+.safety-centre-heading {
+    margin-left: 25%;
+    width: 50%;
+}
+
+
+.safety-centre .safety-centre-heading h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
+
+.safety-centre .safety-centre-heading p {
+    font-size: 24px;
+    text-transform: none !important;
+    padding-bottom: 5%;
+}
+
+
+/* ------ safety centre crousal------ */
+
+.splide{
+    height: 88vh;
+    width: 90%;
+    margin-bottom: 20px !important;
+    margin-left: 5%;
+
+}
+
+.splide__track{
+    width: 83%;
+    margin-left: 9%;
+}
+
+.splide__slide {
+    width: 350px;
+    flex-shrink: 0;
+    border-radius: 21px;
+    background: rgba(255, 255, 255, 0.38);
+    box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.splide__slide a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.splide__slide img{
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 14px;
+  }
+
+  .splide__slide h4{
+    font-weight: bold;
+  }
+
+  .splide__slide p{
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+
+  .splide__arrow{
+    width: 45px !important;
+    height: 134px !important;
+    flex-shrink: 0 !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.49) !important;
+  }
+  
+
+
+/* ----- footer ---- */
+
+
+.footer {
+    text-transform: none;
+    background: #FFF;
+    box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.footer .download-btn-2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer h5 {
+    font-weight: bolder;
+}
+
+.footer p,
+.footer .nav-link {
+    font-weight: 600;
+}
+
+
+.footer .nav-link:hover,
+.footer .social:hover {
+    color: #F6172A !important;
+}
+
+
+/* ---- policies and guidelines pages circles ----- */
+
+#crcl-img {
+    opacity: 120%;
+    position: absolute;
+    top: -60px;
+    left: 250px;
+    width: 150px;
+    height: 150px;
+}
+
+#crcl-img1 {
+    opacity: 90%;
+    position: absolute;
+    top: 620px;
+    left: 1400px;
+    width: 60px;
+    height: 60px;
+}
+
+#crcl-img2 {
+    opacity: 90%;
+    position: absolute;
+    top: 220px;
+    left: 1430px;
+    width: 80px;
+    height: 80px;
+}
+
+#crcl-img3 {
+    opacity: 90%;
+    position: absolute;
+    top: 620px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+#crcl-img4 {
+    opacity: 90%;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    width: 60px;
+    height: 60px;
+}
+
+#crcl-img5 {
+    opacity: 90%;
+    position: absolute;
+    top: 320px;
+    left: 450px;
+    width: 40px;
+    height: 40px;
+}
+
+#crcl-img6 {
+    opacity: 90%;
+    position: absolute;
+    top: 180px;
+    left: 1250px;
+    width: 40px;
+    height: 40px;
+}
+
+#crcl-img7 {
+    opacity: 90%;
+    position: absolute;
+    top: 240px;
+    left: 960px;
+    width: 90px;
+    height: 90px;
+}
+
+/* policies pages -  banner head */
+
+.banner-head {
+    border-radius: 20px;
+    background: linear-gradient(90deg, #FF512F 0%, #F09819 101.22%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    margin-left: 5.5%;
+    height: 45%;
+    width: 90%;
+    margin-top: 100px !important;
+}
+
+.banner-hero-heading {
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.info-box{
+    text-align: justify;
+}
+
+.info-box p{
+    font-weight: bold;
+}
+
+
+/* ----- app launching page ----- */
+
+.count-head h1 {
+    margin-top: 40%;
+    font-weight: bolder;
+    width: 100%;
+    font-size: 50px;
+}
+
+.launch-circle {
+    position: absolute;
+    left: 15%;
+    top: -15%;
+    width: 40%;
+    height: 40%;
+}
+
+.launch-circle-1 {
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    width: 15%;
+    height: 15%;
+}
+
+.launch-circle-2 {
+    position: absolute;
+    right: 18%;
+    top: 18%;
+    width: 20%;
+    height: 20%;
+}
+
+.launch-circle-3 {
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    width: 15%;
+    height: 15%;
+}
+
+.launch-circle-4 {
+    position: absolute;
+    right: 0;
+    top: 80%;
+    /* width: 40%; */
+    /* height: 40%; */
+}
+
+/* countdown timer */
+.container-count {
+    font-size: 30px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.container-count div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-count div:not(:last-child) {
+    margin-right: 15px;
+}
+
+.container-count .box {
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 19px;
+    border: 0.5px solid #F6172A;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+.container-count .ratio {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.container-count span:not(:last-child) {
+    margin-right: 10px;
+}
