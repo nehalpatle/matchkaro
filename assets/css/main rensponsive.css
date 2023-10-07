@@ -11,6 +11,13 @@
         font-size: 45px;
         text-transform: uppercase;
     }
+    #navbar-toggle[aria-expanded="true"]+#navbar-menu {
+        background-color: #F2B721;
+        opacity: 1;
+        visibility: visible;
+        background-image: url(../img/Group\ 15.svg);
+        background-position-y: top;
+    }
     #crcl-img4 {
         opacity: 90%;
         position: absolute;
