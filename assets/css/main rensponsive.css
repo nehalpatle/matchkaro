@@ -67,6 +67,112 @@
         width: 80px;
         height: 80px;
     }
+    #crcl-img {
+        opacity: 120%;
+        position: absolute;
+        top: -60px;
+        left: 230px;
+        width: 150px;
+        height: 150px;
+    }
+    .splide__arrow--next {
+        right: -20px !important;
+    }
+    .splide__arrow--prev {
+        left: 40px !important;
+    }
+    .splide.is-initialized, .splide.is-rendered {
+        visibility: visible;
+        width: 100%;
+        /* height: 50%; */
+        margin-left: -30px;
+    }
+    .splide__arrow {
+       
+        top: 30% !important;
+      
+    }
+    .splide__track {
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        width: 80%;
+    }
+    #splide01-track{
+        width: 95% !important;
+    }
+    .safety-centre-heading {
+        margin-left: 0%;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .splide__pagination li {
+        display: none !important;
+    }
+}
+
+
+@media (min-width:765px) and (max-width:991px){
+    .footer{
+        padding: 25px;
+    }
+
+    #crcl-img4 {
+        opacity: 90%;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        width: 60px;
+        height: 60px;
+    }
+    #crcl-img5 {
+        opacity: 90%;
+        position: absolute;
+        top: 380px;
+        left: 150px;
+        width: 40px;
+        height: 40px;
+    }
+    #crcl-img6 {
+        opacity: 90%;
+        position: absolute;
+        top: 180px;
+        left: 250px;
+        width: 40px;
+        height: 40px;
+    }
+    #crcl-img7 {
+        opacity: 90%;
+        position: absolute;
+        top: 400px;
+        left: 260px;
+        width: 90px;
+        height: 90px;
+    }
+    #crcl-img3 {
+        opacity: 90%;
+        position: absolute;
+        top: 620px;
+        left: 350px;
+        width: 60px;
+        height: 60px;
+    }
+    #crcl-img1 {
+        opacity: 90%;
+        position: absolute;
+        top: 820px;
+        left: 0px;
+        width: 60px;
+        height: 60px;
+    }
+    #crcl-img2 {
+        opacity: 90%;
+        position: absolute;
+        top: 520px;
+        left: 30px;
+        width: 80px;
+        height: 80px;
+    }
     .splide__arrow--next {
         right: -10px !important;
     }
@@ -91,7 +197,8 @@
         width: 80%;
     }
     #splide01-track{
-        width: 95% !important;
+        width: 100% !important;
+        margin-left: 25px;
     }
     .safety-centre-heading {
         margin-left: 0%;
