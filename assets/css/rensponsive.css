@@ -1,6 +1,670 @@
+@media (min-width:300px) and (max-width:380px) {
+    
+    .hero-img {
+        position: relative;
+        top: -20%;
+        left: -12%;
+    }
+
+    .hero-text h1 {
+        color: #000;
+        font-size: 40px;
+        font-weight: bolder;
+        line-height: 140%;
+        text-transform: none;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 58%;
+        margin: 10px;
+        text-align: left;
+        left: 5%;
+        width: 80%;
+    }
+
+    .hero-img {
+        position: relative;
+        top: -15%;
+        left: 12%;
+        width: 70%;
+    }
+
+    .hero-text p {
+        color: #000;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 140%;
+        margin: 0px 0;
+        text-transform: none;
+    }
+
+    .hero-text .download-btn-2 img {
+        box-shadow: 12px 12px 24px #c7c7c7, -12px -12px 24px #ffffff;
+        width: 30%;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    #home .circle-home-1 {
+        position: absolute;
+        left: 39%;
+        top: 57%;
+        width: 15%;
+        height: 15%;
+    }
+
+    .home-link,
+    .navbar-link {
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        font-weight: 600;
+        margin-left: -30px;
+        font-size: 17px;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    #home .circle-home {
+        position: absolute;
+        left: 50%;
+        top: -18%;
+        width: 40%;
+        height: 40%;
+    }
+
+    #navbar-toggle {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .icon-bar {
+        display: block;
+        width: 25px;
+        height: 4px;
+        margin: 2px;
+        background-color: #f00e0e !important;
+    }
+
+    .navbar-links {
+        list-style: none;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        left: 15%;
+        right: 0;
+        top: 5%;
+        margin: 1.4rem;
+    }
+
+    #navbar-toggle[aria-expanded="true"]+#navbar-menu {
+        background-color: #F2B721;
+        opacity: 1;
+        visibility: visible;
+        background-image: url(../img/Group\ 15.svg);
+        background-position-y: top;
+    }
+
+    /* .download-btn {
+        margin-left: 5px;
+    } */
+
+    #quote>h1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: 3px;
+        text-transform: none;
+    }
+
+    #quote {
+        background-image: url(../img/Group\ 15.svg);
+    }
+
+    .section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    #home {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-img .about-bg {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+    top: 80px;
+    }
+
+    .about-img .about-gif {
+        position: absolute;
+        right: 25%;
+        width: 200px;
+        height: 250px;
+        top: 15%;
+    }
+
+    .about-text>h3 {
+        color: #000;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: none;
+        margin-bottom: 10px;
+        width: 20%;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-top: 400px;
+    }
+
+    .about-text>p {
+        color: #000;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 125%;
+        text-align: justify;
+        text-transform: none;
+    }
+
+    .approach-box>p {
+        color: #FFF;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 400;
+        width: 100%;
+        text-transform: none;
+        margin: 0px;
+    }
+
+    .approach-box>h3 {
+        text-transform: none;
+        font-size: 20px;
+    }
+
+    #approach .approach-circle-1 {
+        position: absolute;
+        left: 40%;
+        top: 23%;
+        width: 20%;
+        height: 15%;
+    }
+
+    .approach-box .quotes-2 {
+        width: 10%;
+        height: 4%;
+        margin-left: 100%;
+        margin-top: 10px;
+    }
+
+    .approach-box .quotes-1 {
+        width: 10%;
+        height: 10%;
+        transform: rotate(180deg);
+        margin-left: -38%;
+        margin-bottom: 20px;
+    }
+
+    .approach-box>h1 {
+        color: #FFF;
+        text-align: justify;
+        font-size: 35px;
+        font-weight: bolder;
+        text-transform: none;
+        margin-bottom: 100px;
+    }
+
+    #approach {
+        background-image: url(../img/Group\ 15.svg);
+    }
+
+    .contact .contact-text>h1 {
+        /* margin-bottom: 50px; */
+        font-weight: bolder;
+        position: absolute;
+        top: 100px;
+        /* margin-bottom: 20px; */
+    }
+
+    .contact .contact-text>p {
+        margin-bottom: 10px;   
+        margin-top: 100px;
+    }
+
+    .footer-circle-1 {
+        position: absolute;
+        right: 35%;
+        top: 10%;
+        width: 95px;
+    }
+
+    .footer .logo {
+        margin-left: 120px;
+    }
+
+    #contact-footer .contact {
+        display: block;
+        margin-top: 170%;
+        width: 100%;
+    }
+
+    .contact .contact-text {
+        width: 100%;
+        text-transform: none;
+    }
+
+    .footer-circle-2 {
+        position: absolute;
+        left: 20%;
+        top: 8%;
+        width: 10%;
+        height: 10%;
+    }
+
+    #contact-footer .contact .contact-form {
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+        padding: 30px;
+        margin-left: 0%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
 
 
-@media only screen and (max-width:590px) {
+    .footer-circle {
+        position: absolute;
+        top: 45%;
+        right: 10%;
+    }
+
+    #contact-footer {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        /* margin-top: 10%; */
+    }
+
+    #contact-footer::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+
+    #contact-footer .contact {
+        display: block;
+        margin-top: 270%;
+        width: 100%;
+    }
+
+}
+
+@media (min-width:380px) and (max-width:400px) {
+    .about-img .about-bg {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 40px;
+        bottom: 300px;
+    }
+    .hero-img {
+        position: relative;
+        top: -20%;
+        left: -12%;
+    }
+
+    .hero-text h1 {
+        color: #000;
+        font-size: 40px;
+        font-weight: bolder;
+        line-height: 140%;
+        text-transform: none;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 58%;
+        margin: 10px;
+        text-align: left;
+        left: 5%;
+        width: 80%;
+    }
+
+    .hero-img {
+        position: relative;
+        top: -15%;
+        left: 12%;
+        width: 70%;
+    }
+
+    .hero-text p {
+        color: #000;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 140%;
+        margin: 0px 0;
+        text-transform: none;
+    }
+
+    .hero-text .download-btn-2 img {
+        box-shadow: 12px 12px 24px #c7c7c7, -12px -12px 24px #ffffff;
+        width: 30%;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    #home .circle-home-1 {
+        position: absolute;
+        left: 39%;
+        top: 57%;
+        width: 15%;
+        height: 15%;
+    }
+
+    .home-link,
+    .navbar-link {
+        color: #000;
+        text-decoration: none;
+        display: flex;
+        font-weight: 600;
+        margin-left: -30px;
+        font-size: 17px;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    #home .circle-home {
+        position: absolute;
+        left: 50%;
+        top: -18%;
+        width: 40%;
+        height: 40%;
+    }
+
+    #navbar-toggle {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .icon-bar {
+        display: block;
+        width: 25px;
+        height: 4px;
+        margin: 2px;
+        background-color: #f00e0e !important;
+    }
+
+    .navbar-links {
+        list-style: none;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        left: 15%;
+        right: 0;
+        top: 5%;
+        margin: 1.4rem;
+    }
+
+    #navbar-toggle[aria-expanded="true"]+#navbar-menu {
+        background-color: #F2B721;
+        opacity: 1;
+        visibility: visible;
+        background-image: url(../img/Group\ 15.svg);
+        background-position-y: top;
+    }
+
+    .download-btn {
+        margin-left: 5px;
+    }
+
+    #quote>h1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: 3px;
+        text-transform: none;
+    }
+
+    #quote {
+        background-image: url(../img/Group\ 15.svg);
+    }
+
+    .section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    #home {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .about-img .about-gif {
+        position: absolute;
+        right: 25%;
+        width: 200px;
+        height: 250px;
+        top: 15%;
+    }
+
+    .about-text>h3 {
+        color: #000;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: none;
+        margin-bottom: 10px;
+        width: 20%;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-top: 400px;
+    }
+
+    .about-text>p {
+        color: #000;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 125%;
+        text-align: justify;
+        text-transform: none;
+    }
+
+    .approach-box>p {
+        color: #FFF;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 400;
+        width: 100%;
+        text-transform: none;
+        margin: 0px;
+    }
+
+    .approach-box>h3 {
+        text-transform: none;
+        font-size: 20px;
+    }
+
+    #approach .approach-circle-1 {
+        position: absolute;
+        left: 40%;
+        top: 23%;
+        width: 20%;
+        height: 15%;
+    }
+
+    .approach-box .quotes-2 {
+        width: 10%;
+        height: 4%;
+        margin-left: 100%;
+        margin-top: 10px;
+    }
+
+    .approach-box .quotes-1 {
+        width: 10%;
+        height: 10%;
+        transform: rotate(180deg);
+        margin-left: -38%;
+        margin-bottom: 20px;
+    }
+
+    .approach-box>h1 {
+        color: #FFF;
+        text-align: justify;
+        font-size: 35px;
+        font-weight: bolder;
+        text-transform: none;
+        margin-bottom: 100px;
+    }
+
+    #approach {
+        background-image: url(../img/Group\ 15.svg);
+    }
+
+    .contact .contact-text>h1 {
+        /* margin-bottom: 50px; */
+        font-weight: bolder;
+        position: absolute;
+        top: 100px;
+        /* margin-bottom: 20px; */
+    }
+
+    .contact .contact-text>p {
+        margin-bottom: 10px;
+        margin-top: 70px;
+    }
+
+    .footer-circle-1 {
+        position: absolute;
+        right: 35%;
+        top: 10%;
+        width: 95px;
+    }
+
+    .footer .logo {
+        margin-left: 120px;
+    }
+
+    #contact-footer .contact {
+        display: block;
+        margin-top: 170%;
+        width: 100%;
+    }
+
+    .contact .contact-text {
+        width: 100%;
+        text-transform: none;
+    }
+
+    .footer-circle-2 {
+        position: absolute;
+        left: 20%;
+        top: 8%;
+        width: 10%;
+        height: 10%;
+    }
+
+    #contact-footer .contact .contact-form {
+        background: #FFF;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+        padding: 30px;
+        margin-left: 0%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+
+    .footer-circle {
+        position: absolute;
+        top: 45%;
+        right: 10%;
+    }
+
+    #contact-footer {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        /* margin-top: 10%; */
+    }
+
+    #contact-footer::-webkit-scrollbar {
+        display: none;
+        /* Safari and Chrome */
+    }
+
+    #contact-footer .contact {
+        display: block;
+        margin-top: 270%;
+        width: 100%;
+    }
+
+
+}
+
+
+@media (min-width:400px) and (max-width:600px) {
 
     .hero-img {
         position: relative;
@@ -98,16 +762,16 @@
     }
 
     .navbar-links {
-    list-style: none;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: normal;
-    left: 15%;
-    right: 0;
-    top: 5%;
-    margin: 1.4rem;
-}
+        list-style: none;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        left: 15%;
+        right: 0;
+        top: 5%;
+        margin: 1.4rem;
+    }
 
     #navbar-toggle[aria-expanded="true"]+#navbar-menu {
         background-color: #F2B721;
@@ -118,8 +782,8 @@
     }
 
     .download-btn {
-    margin-left: 13px;
-}
+        margin-left: 15px;
+    }
 
     #quote>h1 {
         color: #FFF;
@@ -167,8 +831,9 @@
         width: 300px;
         height: 300px;
         position: absolute;
-        right: 40px;
-        bottom: 430px;
+        right: 50px;
+        /* bottom: 420px; */
+        top: 100px;
     }
 
     .about-img .about-gif {
@@ -254,12 +919,10 @@
     }
 
     .contact .contact-text>h1 {
-    /* margin-bottom: 50px; */
-    font-weight: bolder;
-    position: absolute;
-    top: 130px;
-    /* margin-bottom: 20px; */
-}
+        /* margin-bottom: 50px; */
+        font-weight: bolder;
+        /* margin-bottom: 20px; */
+    }
 
     .contact .contact-text>p {
         margin-bottom: 10px;
@@ -278,13 +941,13 @@
 
     #contact-footer .contact {
         display: block;
-        margin-top: 170%;
         width: 100%;
     }
 
     .contact .contact-text {
         width: 100%;
         text-transform: none;
+        margin-top: -270px;
     }
 
     .footer-circle-2 {
@@ -355,26 +1018,6 @@
         left: 5%;
         width: 80%;
     }
-    .section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 16px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
 
     .hero-img {
         position: relative;
@@ -673,26 +1316,6 @@
         left: 0%;
     }
 
-    .section {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 16px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
     .home-link,
     .navbar-link {
         color: #000;
@@ -713,6 +1336,17 @@
 
     #contact-footer .contact {
         margin-bottom: 40px;
+    }
+
+    .about-img .about-gif {
+        position: absolute;
+        right: 8%;
+        top: 35%;
+        width: 250px;
+        height: 300px;
+    }
+    .about-text {
+        width: 50%;
     }
 
 }
