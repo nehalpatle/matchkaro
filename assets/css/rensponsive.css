@@ -98,16 +98,16 @@
     }
 
     .navbar-links {
-        list-style: none;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: normal;
-        left: -15%;
-        right: 0;
-        top: 5%;
-        margin: 1.4rem;
-    }
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    left: 15%;
+    right: 0;
+    top: 5%;
+    margin: 1.4rem;
+}
 
     #navbar-toggle[aria-expanded="true"]+#navbar-menu {
         background-color: #F2B721;
@@ -118,8 +118,8 @@
     }
 
     .download-btn {
-        margin-left: 50px;
-    }
+    margin-left: 13px;
+}
 
     #quote>h1 {
         color: #FFF;
