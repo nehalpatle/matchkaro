@@ -254,12 +254,12 @@
     }
 
     .contact .contact-text>h1 {
-        /* margin-bottom: 50px; */
-        font-weight: bolder;
-        position: absolute;
-        top: 100px;
-        /* margin-bottom: 20px; */
-    }
+    /* margin-bottom: 50px; */
+    font-weight: bolder;
+    position: absolute;
+    top: 130px;
+    /* margin-bottom: 20px; */
+}
 
     .contact .contact-text>p {
         margin-bottom: 10px;
